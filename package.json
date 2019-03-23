@@ -1,7 +1,7 @@
 {
-  "name": "reportportal-client",
-  "version": "5.1.0",
-  "description": "ReportPortal client for node.js",
+  "name": "reportportal-js-client",
+  "version": "1.0.0",
+  "description": "ReportPortal client for NodeJS",
   "contributors": [
     {
       "name": "Artsiom Tkachou",
@@ -10,12 +10,16 @@
     {
       "name": "Alexey Krylov",
       "email": "lexecon117@gmail.com"
+    },
+    {
+      "name": "Boris Osipov",
+      "email": "osipov.boris@gmail.com"
     }
   ],
-  "homepage": "https://github.com/reportportal/client-javascript",
+  "homepage": "https://github.com/BorisOsipov/reportportal-js-client",
   "repository": {
     "type": "git",
-    "url": "https://github.com/reportportal/client-javascript.git"
+    "url": "https://github.com/BorisOsipov/reportportal-js-client.git"
   },
   "directories": {
     "lib": "./lib"
@@ -36,7 +40,6 @@
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov"
   },
   "devDependencies": {
-    "codecov": "3.1.0",
     "eslint": "5.15.1",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.16.0",

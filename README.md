@@ -1,24 +1,20 @@
-[![Build Status](https://travis-ci.org/reportportal/client-javascript.svg?branch=master)](https://travis-ci.org/reportportal/client-javascript)[![Code Coverage](https://codecov.io/gh/reportportal/client-javascript/branch/master/graph/badge.svg)](https://codecov.io/gh/reportportal/client-javascript)[![npm version](https://badge.fury.io/js/reportportal-client.svg)](https://badge.fury.io/js/reportportal-client)
+[![Build Status](https://travis-ci.org/BorisOsipov/reportportal-js-client.svg?branch=master)](https://travis-ci.org/BorisOsipov/reportportal-js-client)
 
-# ReportPortal js client 
+# ReportPortal js client
+Fork of [client-javascript](https://github.com/reportportal/client-javascript) 
 This Client is to communicate with the Report Portal on node js.
-
 Library is used only for implementors of custom listeners for ReportPortal.
-
-## Already implemented listeners:
-* EMPTY
-
 
 ## Installation
 The latest version is available on npm:
 ```cmd
-npm install reportportal-client
+npm install reportportal-js-client
 ```
     
 ## Example
 
 ```javascript
-let RPClient = require('reportportal-client');
+let RPClient = require('reportportal-js-client');
 
 let rpClient = new RPClient({
     token: "00000000-0000-0000-0000-000000000000",

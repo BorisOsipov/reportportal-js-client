@@ -1,4 +1,4 @@
-# Report Portal client-javascript example
+# Report Portal reportportal-js-client example
 
 To run the examples you must have [nodejs](https://nodejs.org/en/) installed.
 
