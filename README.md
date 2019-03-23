@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/BorisOsipov/reportportal-js-client.svg?branch=master)](https://travis-ci.org/BorisOsipov/reportportal-js-client)
 
 # ReportPortal js client
-Fork of [client-javascript](https://github.com/reportportal/client-javascript) 
+Fork of [client-javascript](https://github.com/reportportal/client-javascript)  
 This Client is to communicate with the Report Portal on node js.
 Library is used only for implementors of custom listeners for ReportPortal.
 
