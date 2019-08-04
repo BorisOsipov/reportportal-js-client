@@ -8,7 +8,6 @@
   "rules": {
     "indent": ["error", 4],
     "max-len": ["error", 120],
-    "valid-jsdoc": "error",
-      "linebreak-style": "off"
+    "valid-jsdoc": "error"
   }
 }
