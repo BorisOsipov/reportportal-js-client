@@ -24,9 +24,11 @@ describe('ReportPortal javascript client', () => {
             const time = 12345734;
             client.startLaunch({
                 start_time: time,
+                startTime: time,
             });
             expect(client.restClient.create).toHaveBeenCalledWith('launch', {
                 name: 'Test launch name',
+                startTime: time,
                 start_time: time,
             }, { headers: client.headers });
         });
