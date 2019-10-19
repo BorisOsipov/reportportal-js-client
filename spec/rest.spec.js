@@ -91,7 +91,7 @@ describe('RestClient', () => {
             const userCreated = { id: 1 };
 
             const scope = nock(options.baseURL)
-                .post('/users', body => isEqual(body, newUser))
+                .post('/users', (body) => isEqual(body, newUser))
                 .reply(201, userCreated);
 
             restClient.create('users', newUser, noOptions).then((result) => {
@@ -106,7 +106,7 @@ describe('RestClient', () => {
             const newUser = { username: 'John' };
 
             const scope = nock(options.baseURL)
-                .post('/users', body => isEqual(body, newUser))
+                .post('/users', (body) => isEqual(body, newUser))
                 .replyWithError(netErrConnectionResetError);
 
             restClient.create('users', newUser, noOptions).catch((error) => {
@@ -122,7 +122,7 @@ describe('RestClient', () => {
             const newUser = { username: 'John' };
 
             const scope = nock(options.baseURL)
-                .post('/users', body => isEqual(body, newUser))
+                .post('/users', (body) => isEqual(body, newUser))
                 .reply(403, unathorizedError);
 
             restClient.create('users', newUser, noOptions).catch((error) => {
@@ -141,7 +141,7 @@ describe('RestClient', () => {
             const userUpdated = { id: 1 };
 
             const scope = nock(options.baseURL)
-                .put('/users/1', body => isEqual(body, newUserInfo))
+                .put('/users/1', (body) => isEqual(body, newUserInfo))
                 .reply(200, userUpdated);
 
             restClient.update('users/1', newUserInfo, noOptions).then((result) => {
@@ -156,7 +156,7 @@ describe('RestClient', () => {
             const newUserInfo = { username: 'Mike' };
 
             const scope = nock(options.baseURL)
-                .put('/users/1', body => isEqual(body, newUserInfo))
+                .put('/users/1', (body) => isEqual(body, newUserInfo))
                 .replyWithError(netErrConnectionResetError);
 
 
@@ -173,7 +173,7 @@ describe('RestClient', () => {
             const newUserInfo = { username: 'Mike' };
 
             const scope = nock(options.baseURL)
-                .put('/users/1', body => isEqual(body, newUserInfo))
+                .put('/users/1', (body) => isEqual(body, newUserInfo))
                 .reply(403, unathorizedError);
 
             restClient.update('users/1', newUserInfo, noOptions).catch((error) => {
