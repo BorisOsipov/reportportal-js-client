@@ -1,52 +1,54 @@
 {
-  "name": "reportportal-js-client",
-  "version": "1.2.1",
-  "description": "ReportPortal client for NodeJS",
-  "contributors": [
-    {
-      "name": "Artsiom Tkachou",
-      "email": "artsiom_tkachou@epam.com"
+    "name": "reportportal-js-client",
+    "version": "1.2.1",
+    "description": "ReportPortal client for NodeJS",
+    "contributors": [
+        {
+            "name": "Artsiom Tkachou",
+            "email": "artsiom_tkachou@epam.com"
+        },
+        {
+            "name": "Alexey Krylov",
+            "email": "lexecon117@gmail.com"
+        },
+        {
+            "name": "Boris Osipov",
+            "email": "osipov.boris@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/BorisOsipov/reportportal-js-client",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BorisOsipov/reportportal-js-client.git"
     },
-    {
-      "name": "Alexey Krylov",
-      "email": "lexecon117@gmail.com"
+    "directories": {
+        "lib": "./lib"
     },
-    {
-      "name": "Boris Osipov",
-      "email": "osipov.boris@gmail.com"
+    "main": "./lib/report-portal-client",
+    "engines": {
+        "node": ">= 8.0.x"
+    },
+    "dependencies": {
+        "axios": "^0.18.1",
+        "axios-retry": "^3.1.2",
+        "glob": "^7.1.4",
+        "uniqid": "^5.0.3"
+    },
+    "license": "GPL-3.0",
+    "scripts": {
+        "lint": "eslint . --quiet",
+        "test": "nyc ./node_modules/jasmine/bin/jasmine.js",
+        "coverage": "nyc report --reporter=text-lcov > coverage.lcov"
+    },
+    "devDependencies": {
+        "codecov": "3.5.0",
+        "eslint": "^6.5.1",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-node": "^10.0.0",
+        "jasmine": "^3.5.0",
+        "lodash": "^4.17.15",
+        "nock": "^11.7.0",
+        "nyc": "^14.1.1"
     }
-  ],
-  "homepage": "https://github.com/BorisOsipov/reportportal-js-client",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BorisOsipov/reportportal-js-client.git"
-  },
-  "directories": {
-    "lib": "./lib"
-  },
-  "main": "./lib/report-portal-client",
-  "engines": {
-    "node": ">= 8.0.x"
-  },
-  "dependencies": {
-    "axios": "0.19.0",
-    "axios-retry": "3.1.2",
-    "uniqid": "5.0.3"
-  },
-  "license": "GPL-3.0",
-  "scripts": {
-    "lint": "eslint . --quiet",
-    "test": "nyc ./node_modules/jasmine/bin/jasmine.js",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov"
-  },
-  "devDependencies": {
-    "eslint": "^6.5.1",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^10.0.0",
-    "jasmine": "^3.5.0",
-    "lodash": "^4.17.15",
-    "nock": "^11.7.0",
-    "nyc": "^14.1.1"
-  }
 }
