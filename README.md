@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/BorisOsipov/reportportal-js-client.svg?branch=master)](https://travis-ci.org/BorisOsipov/reportportal-js-client)
 
 # ReportPortal js client
-Fork of [client-javascript](https://github.com/reportportal/client-javascript)  
+Fork of [client-javascript](https://github.com/reportportal/client-javascript)
 This Client is to communicate with the Report Portal on node js.
 Library is used only for implementors of custom listeners for ReportPortal.
 
@@ -10,7 +10,7 @@ The latest version is available on npm:
 ```cmd
 npm install reportportal-js-client
 ```
-    
+
 ## Example
 
 ```javascript
@@ -41,6 +41,7 @@ token     | user's token Report Portal from which you want to send requests. It 
 endpoint  | URL of your server. For example, if you visit the page at 'https://server:8080/ui', then endpoint will be equal to 'https://server:8080/api/v1'.
 launch    | Name of launch at creation.
 project   | The name of the project in which the launches will be created.
+headers:  | (optional) headers object passed to all http request to report portal server.
 
 ## Api
 Each method (except checkConnect) returns an object in a specific format:
@@ -196,7 +197,7 @@ Parameter | Description
 --------- | -----------
 end_time  | (optional) end time of launch. Default: rpClient.helpers.now()
 status    | (optional) item status, one of "", "PASSED", "FAILED", "STOPPED", "SKIPPED", "RESTED", "CANCELLED". Default: "PASSED".
-issue     | (optional) object issue 
+issue     | (optional) object issue
 
 Example issue object:
 ```
