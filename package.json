@@ -29,9 +29,9 @@
     "node": ">= 8.0.x"
   },
   "dependencies": {
-    "axios": "0.19.2",
-    "axios-retry": "3.1.2",
-    "uniqid": "5.0.3"
+    "axios": "^0.20.0",
+    "axios-retry": "^3.1.8",
+    "uniqid": "^5.2.0"
   },
   "license": "Apache-2.0",
   "scripts": {
@@ -40,13 +40,13 @@
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov"
   },
   "devDependencies": {
-    "eslint": "^6.5.1",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.20.0",
-    "eslint-plugin-node": "^10.0.0",
-    "jasmine": "^3.5.0",
-    "lodash": "^4.17.15",
-    "nock": "^11.7.0",
-    "nyc": "^14.1.1"
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "jasmine": "^3.6.1",
+    "lodash": "^4.17.20",
+    "nock": "^13.0.4",
+    "nyc": "^15.1.0"
   }
 }

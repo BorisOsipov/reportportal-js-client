@@ -159,7 +159,6 @@ describe('RestClient', () => {
                 .put('/users/1', (body) => isEqual(body, newUserInfo))
                 .replyWithError(netErrConnectionResetError);
 
-
             restClient.update('users/1', newUserInfo, noOptions).catch((error) => {
                 expect(error instanceof Error).toBeTruthy();
                 expect(error.message).toMatch(netErrConnectionResetError.message);
