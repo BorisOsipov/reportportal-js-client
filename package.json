@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "axios-retry": "^3.1.8",
+    "axios-retry": "^3.1.9",
     "uniqid": "^5.2.0"
   },
   "license": "Apache-2.0",
@@ -40,13 +40,13 @@
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov"
   },
   "devDependencies": {
-    "eslint": "^7.7.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
-    "jasmine": "^3.6.1",
-    "lodash": "^4.17.20",
-    "nock": "^13.0.4",
+    "jasmine": "^3.6.3",
+    "lodash": "^4.17.19",
+    "nock": "^13.0.5",
     "nyc": "^15.1.0"
   }
 }
