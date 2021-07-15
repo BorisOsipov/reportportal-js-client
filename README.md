@@ -42,7 +42,7 @@ endpoint  | URL of your server. For example, if you visit the page at 'https://s
 launch    | Name of launch at creation.
 project   | The name of the project in which the launches will be created.
 headers:  | (optional) headers object passed to all http request to report portal server.
-
+restClientConfig | (optional) The object with `agent` property for configure [http(s)](https://nodejs.org/api/https.html#https_https_request_url_options_callback) client, may contain other client options eg. `timeout`.
 ## Api
 Each method (except checkConnect) returns an object in a specific format:
 ```javascript

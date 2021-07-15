@@ -1,4 +1,4 @@
-const RPClient = require('../lib/report-portal-client.js');
+const RPClient = require('../lib/report-portal-client');
 const RestClient = require('../lib/rest');
 
 describe('helpers', () => {

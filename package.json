@@ -31,7 +31,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "axios-retry": "^3.1.9",
-    "uniqid": "^5.2.0"
+    "uniqid": "^5.3.0"
   },
   "license": "Apache-2.0",
   "scripts": {
@@ -40,13 +40,13 @@
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov"
   },
   "devDependencies": {
-    "eslint": "^7.18.0",
+    "eslint": "^7.30.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
-    "jasmine": "^3.6.3",
-    "lodash": "^4.17.19",
-    "nock": "^13.0.5",
+    "jasmine": "^3.8.0",
+    "lodash": "^4.17.21",
+    "nock": "^13.1.1",
     "nyc": "^15.1.0"
   }
 }

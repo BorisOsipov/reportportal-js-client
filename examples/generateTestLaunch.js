@@ -1,4 +1,4 @@
-const RPClient = require('../lib/report-portal-client.js');
+const RPClient = require('../lib/report-portal-client');
 
 const rpClient = new RPClient({
     token: '00000000-0000-0000-0000-000000000000',

@@ -1,6 +1,6 @@
 /* eslint-disable global-require,no-underscore-dangle */
 describe('ReportPortal javascript client', () => {
-    const RPClient = require('../lib/report-portal-client.js');
+    const RPClient = require('../lib/report-portal-client');
 
     describe('constructor', () => {
         it('executes without error', () => {
